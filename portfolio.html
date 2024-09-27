@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gokulnath's Modern Portfolio">
+    <title>Gokulnath's Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin-bottom: 5px;
+        }
+        header p {
+            font-size: 1.1em;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+        }
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            background-color: #4CAF50;
+            transition: 0.3s;
+        }
+        section {
+            margin: 20px 0;
+        }
+        section h2 {
+            color: #4CAF50;
+            margin-bottom: 15px;
+        }
+        .skills, .projects, .contact {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 20px;
+        }
+        .skill, .project, .contact-item {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .skill h3, .project h3, .contact h3 {
+            margin-bottom: 10px;
+        }
+        .project a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .project a:hover {
+            background-color: #333;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+            position: relative;
+        }
+        footer p {
+            margin-bottom: 5px;
+        }
+        @media (max-width: 768px) {
+            nav a {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gokulnath's Portfolio</h1>
+        <p>Network Engineer | CCNA Certified | Linux Enthusiast</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I am an enthusiastic graduate with hands-on experience in networking, cloud platforms (AWS & Azure), and Python programming.
+                Equipped with a Cisco Certified Network Associate (CCNA) certification and looking to apply my skills in challenging professional settings.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills">
+                <div class="skill">
+                    <h3>Linux (BASH)</h3>
+                    <p>Proficient in using Linux terminal and Bash scripting for system automation and networking tasks.</p>
+                </div>
+                <div class="skill">
+                    <h3>Networking (CCNA)</h3>
+                    <p>Experienced in network configuration, routing, switching, and troubleshooting.</p>
+                </div>
+                <div class="skill">
+                    <h3>Cloud Platforms - AWS, Azure</h3>
+                    <p>Knowledge of deploying and managing services on cloud platforms.</p>
+                </div>
+                <div class="skill">
+                    <h3>Python</h3>
+                    <p>Capable of developing scripts for automation and network management tasks.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project">
+                    <h3>Routing Optimization Using Cisco Packet Tracer</h3>
+                    <p>Configured OSPF and EIGRP protocols to optimize network performance. Enhanced routing and IP addressing in a simulated environment.</p>
+                    <a href="routing-optimization.html" target="_blank">View Project</a>
+                </div>
+                <div class="project">
+                    <h3>ACL and Network Security Implementation</h3>
+                    <p>Set up Access Control Lists (ACLs) and VLANs to implement security measures in a simulated network using Cisco Packet Tracer.</p>
+                    <a href="acl-security.html" target="_blank">View Project</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact">
+                <div class="contact-item">
+                    <h3>Email</h3>
+                    <p>gokulnathv1919@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Phone</h3>
+                    <p>9384995483</p>
+                </div>
+                <div class="contact-item">
+                    <h3>LinkedIn</h3>
+                    <p><a href="http://www.linkedin.com/in/gokulnathv--" target="_blank">Gokulnath on LinkedIn</a></p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Gokulnath</p>
+    </footer>
+</body>
+</html>
